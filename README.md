@@ -1,7 +1,8 @@
 # GoogleGPT
 Just a webpage like Google Search, but with API calls to 'text-davinci-003' ( aka ChatGPT )
 
-
+references
+https://platform.openai.com/docs/models/content-filter
 https://auth0.com/docs/get-started/authentication-and-authorization-flow/call-your-api-using-the-client-credentials-flow
 
 sample token
