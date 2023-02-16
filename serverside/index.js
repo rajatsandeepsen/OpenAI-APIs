@@ -20,7 +20,7 @@ client.on("message", (message) => {
   if (message.body) {
       let mess = message.body
       console.log(mess)
-      if ("img:" === mess.slice(0,4)){
+      if ("img:" === mess.slice(0,4) || "Img:" === mess.slice(0,4) || "IMG:" === mess.slice(0,4)){
         runDallE(mess.slice(4))
         .then(async (data) => {
           
