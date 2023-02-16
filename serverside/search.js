@@ -5,7 +5,6 @@ dotenv.config({ path: './.env' })
 export function search(x){
 
     return new Promise((resolve, reject) => {
-        console.log(x);
         fetch(process.env.APIURL, {
             method: 'POST',
             headers: {
@@ -20,7 +19,6 @@ export function search(x){
             res.choices.forEach(element => {
                 array += element.text;
             })
-            console.log(array)
             resolve(array.trim())
         }
         )
